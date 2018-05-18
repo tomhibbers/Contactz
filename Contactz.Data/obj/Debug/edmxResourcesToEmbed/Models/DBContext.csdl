@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ContactzModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Addressbook">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContactID" Type="Int32" />
+    <NavigationProperty Name="Contact" Relationship="Self.FK_Contact_Addressbook" FromRole="Addressbook" ToRole="Contact" />
+  </EntityType>
+  <EntityType Name="Contact">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Surname" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Category" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Addressbook" Relationship="Self.FK_Contact_Addressbook" FromRole="Contact" ToRole="Addressbook" />
+    <Property Name="Mobile" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="MobileInt" Type="Int32" />
+  </EntityType>
+  <Association Name="FK_Contact_Addressbook">
+    <End Role="Contact" Type="Self.Contact" Multiplicity="1" />
+    <End Role="Addressbook" Type="Self.Addressbook" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Contact">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Addressbook">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ContactzEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Addressbooks" EntityType="Self.Addressbook" />
+    <EntitySet Name="Contacts" EntityType="Self.Contact" />
+    <AssociationSet Name="FK_Contact_Addressbook" Association="Self.FK_Contact_Addressbook">
+      <End Role="Contact" EntitySet="Contacts" />
+      <End Role="Addressbook" EntitySet="Addressbooks" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

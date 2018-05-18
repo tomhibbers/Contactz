@@ -1,0 +1,11 @@
+C:\work\src\contactz\Contactz\Contactz.TestCLI\bin\Debug\netcoreapp2.0\Contactz.TestCLI.deps.json
+C:\work\src\contactz\Contactz\Contactz.TestCLI\bin\Debug\netcoreapp2.0\Contactz.TestCLI.runtimeconfig.json
+C:\work\src\contactz\Contactz\Contactz.TestCLI\bin\Debug\netcoreapp2.0\Contactz.TestCLI.runtimeconfig.dev.json
+C:\work\src\contactz\Contactz\Contactz.TestCLI\bin\Debug\netcoreapp2.0\Contactz.TestCLI.dll
+C:\work\src\contactz\Contactz\Contactz.TestCLI\bin\Debug\netcoreapp2.0\Contactz.TestCLI.pdb
+C:\work\src\contactz\Contactz\Contactz.TestCLI\obj\Debug\netcoreapp2.0\Contactz.TestCLI.csprojAssemblyReference.cache
+C:\work\src\contactz\Contactz\Contactz.TestCLI\obj\Debug\netcoreapp2.0\Contactz.TestCLI.csproj.CoreCompileInputs.cache
+C:\work\src\contactz\Contactz\Contactz.TestCLI\obj\Debug\netcoreapp2.0\Contactz.TestCLI.AssemblyInfoInputs.cache
+C:\work\src\contactz\Contactz\Contactz.TestCLI\obj\Debug\netcoreapp2.0\Contactz.TestCLI.AssemblyInfo.cs
+C:\work\src\contactz\Contactz\Contactz.TestCLI\obj\Debug\netcoreapp2.0\Contactz.TestCLI.dll
+C:\work\src\contactz\Contactz\Contactz.TestCLI\obj\Debug\netcoreapp2.0\Contactz.TestCLI.pdb

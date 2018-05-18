@@ -1,0 +1,6 @@
+C:\work\src\contactz\Contactz\Contactz.Common\bin\Debug\Contactz.Common.dll
+C:\work\src\contactz\Contactz\Contactz.Common\bin\Debug\Contactz.Common.pdb
+C:\work\src\contactz\Contactz\Contactz.Common\obj\Debug\Contactz.Common.csprojAssemblyReference.cache
+C:\work\src\contactz\Contactz\Contactz.Common\obj\Debug\Contactz.Common.csproj.CoreCompileInputs.cache
+C:\work\src\contactz\Contactz\Contactz.Common\obj\Debug\Contactz.Common.dll
+C:\work\src\contactz\Contactz\Contactz.Common\obj\Debug\Contactz.Common.pdb

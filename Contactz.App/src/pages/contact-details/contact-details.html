@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div>
+    <form>
+      <ion-list>
+        <ion-item>
+          <input type="hidden" name="ID" [(ngModel)]="ID" />
+          <ion-label for="Name" stacked>Name</ion-label>
+          <ion-input type="text" name="Name" [(ngModel)]="Name" [disabled]="!edit"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label for="Surname" stacked>Surname</ion-label>
+          <ion-input type="text" name="Surname" [(ngModel)]="Surname" [disabled]="!edit"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label for="Email" stacked>Email</ion-label>
+          <ion-input type="text" name="Email" [(ngModel)]="Email" [disabled]="!edit"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label for="MobileInt" stacked>Mobile</ion-label>
+            <ion-input type="number" name="MobileInt" [(ngModel)]="MobileInt" [disabled]="!edit"></ion-input>
+            <!-- <ion-input type="tel" pattern="\d*" placeholder="(xxx) xxx-xxxx" mask="(***) ***-****" [(ngModel)]="Mobile" name="Mobile"></ion-input> -->
+          </ion-item>
+      </ion-list>
+      <div padding>
+        <button ion-button color="primary" (click)="onClicked(!edit)" [hidden]="create">{{edit? "save" : "edit"}}</button>
+        <button ion-button color="primary" (click)="onClicked(!edit)" [hidden]="!create">create</button>
+      </div>
+    </form>
+  </div>
+</ion-content>
